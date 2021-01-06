@@ -1,8 +1,6 @@
 import 'dart:convert';
 
 import 'package:covid19_app/const/constant.dart';
-// import 'package:covid19_app/models/mPenambahan.dart';
-import 'package:covid19_app/models/mSummary.dart';
 import 'package:covid19_app/service/apiService.dart';
 import 'package:covid19_app/widgets/counter.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +25,7 @@ class _SecondPageViewState extends State<SecondPageView> {
         var update = json["update"];
         var dataTotal = update["total"];
         var dataUpdate = update["penambahan"];
-        print(dataTotal);
+        // print(dataTotal);
         jmlPositif = dataTotal["jumlah_positif"];
         jmlMeninggal = dataTotal["jumlah_meninggal"];
         jmlSembuh = dataTotal["jumlah_sembuh"];
@@ -50,7 +48,7 @@ class _SecondPageViewState extends State<SecondPageView> {
       // }
 
       // print(dataList);
-      return json;
+      return ['something wrong'];
     } else {
       print(res);
       print('something wrong');

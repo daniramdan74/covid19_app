@@ -20,6 +20,7 @@ const kHeadingTextStyle = TextStyle(
 );
 
 const kSubTextStyle = TextStyle(fontSize: 16, color: kTextLightColor);
+const kSubText1Style = TextStyle(fontSize: 20, color: kInfectedColor);
 const kSubText2Style = TextStyle(fontSize: 12, color: kTextLightColor);
 const kTitleTextstyle = TextStyle(
   fontSize: 18,

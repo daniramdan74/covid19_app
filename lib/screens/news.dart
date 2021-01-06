@@ -8,12 +8,8 @@ class NewsPage extends StatefulWidget {
 class _NewsPageState extends State<NewsPage> {
   @override
   Widget build(BuildContext context) {
- return Scaffold(
-      appBar: AppBar(title: Text('News'),),
-      body: Center(
-        child: Text('News'),
-      ),
+    return Container(
+      child: Text("news")
     );
-
   }
 }
