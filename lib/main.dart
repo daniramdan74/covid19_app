@@ -1,4 +1,5 @@
 
+import 'package:covid19_app/const/constant.dart';
 import 'package:covid19_app/screens/homePage.dart';
 import 'package:covid19_app/screens/info.dart';
 import 'package:covid19_app/screens/news.dart';
@@ -44,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: _page[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: kPrimary2Color,
           onTap: onTappedBar,
           currentIndex: _currentIndex,
           items: [

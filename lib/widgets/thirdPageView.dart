@@ -54,14 +54,15 @@ class _ThirdPageViewState extends State<ThirdPageView> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(left: 10, right: 10),
+        // padding: EdgeInsets.only(left: 10, right: 10),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Row(
             children: <Widget>[
+              SizedBox(width: 10.0,),
               RichText(
                   text: TextSpan(children: [
                 TextSpan(
-                  text: 'Top Province\n',
+                  text: 'Province\n',
                   style: kTitleTextstyle,
                 ),
                 TextSpan(
@@ -73,14 +74,15 @@ class _ThirdPageViewState extends State<ThirdPageView> {
               ])),
               Spacer(),
               Text(
-                'View All >',
+                'See details',
                 style: TextStyle(
                     color: kPrimaryColor, fontWeight: FontWeight.w600),
-              )
+              ),
+              SizedBox(width: 15.0,),
             ],
           ),
           Container(
-            height: 195.0,
+            height: 205.0,
             child: FutureBuilder<List<ListDatum>>(
                 future: _fetchdata2(),
                 builder: (context, snapshot) {
